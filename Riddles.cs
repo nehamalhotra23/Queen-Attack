@@ -30,10 +30,14 @@ static int RandomNumber(int min, int max)
        Console.WriteLine(randomKey);
        //get an answer from the user
        string stringInput = Console.ReadLine();
-       //compare user input to answer
-
-       //give result
-
+      //compare user input to answer
+      if (stringInput == riddles[randomKey]) {
+        //give result
+        Console.WriteLine("True");
+      } else {
+        Console.WriteLine("false");
+        break;
+      }
        //ask to continue
        Console.WriteLine("continue?: y for yes, q for quit");
        nextRiddle = Console.ReadLine();
