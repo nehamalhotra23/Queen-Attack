@@ -7,10 +7,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Ping-pong")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Riddles")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Ping-pong")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Ping-pong")]
+[assembly: System.Reflection.AssemblyProductAttribute("Riddles")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Riddles")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

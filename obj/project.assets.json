@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/ping-pong/ping-pong.csproj",
-      "projectName": "ping-pong",
-      "projectPath": "/Users/Guest/Desktop/ping-pong/ping-pong.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/riddles/Riddles.csproj",
+      "projectName": "Riddles",
+      "projectPath": "/Users/Guest/Desktop/riddles/Riddles.csproj",
       "packagesPath": "/Users/Guest/.nuget/packages/",
-      "outputPath": "/Users/Guest/Desktop/ping-pong/obj/",
+      "outputPath": "/Users/Guest/Desktop/riddles/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
