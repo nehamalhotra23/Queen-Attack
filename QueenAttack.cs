@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-
-
 public class Coordinate {
   public int X { get; set; }
   public int Y { get; set; }
@@ -11,6 +9,75 @@ public class Coordinate {
     X = x;
     Y = y;
   }
+}
+
+public class Queen {
+  public int X { get; set; }
+  public int Y { get; set; }
+  public Queen(int x, int y)
+  {
+    X = x;
+    Y = y;
+  }
+
+  public bool canAttackMethod(Coordinate pawn)
+  {
+    bool canAttack = false;
+    //does comparison between pawn coordinates and queen coordinates
+    if (this.X == pawn.X || this.Y == pawn.Y) {
+      canAttack = true;
+    }
+    Coordinate scanner = new Coordinate(this.X, this.Y);
+    //scan up and right
+    while(scanner.X <= 7 && scanner.Y <= 7)
+    {
+      scanner.X++;
+      scanner.Y++;
+      if(scanner.X == pawn.X && scanner.Y == pawn.Y)
+      {
+        canAttack = true;
+      }
+    }
+    //scan up left
+    scanner.X = this.X;
+    scanner.Y = this.Y;
+    while(scanner.X >= 2 && scanner.Y <= 7)
+    {
+      scanner.X--;
+      scanner.Y++;
+      if(scanner.X == pawn.X && scanner.Y == pawn.Y)
+      {
+        canAttack = true;
+      }
+    }
+    //scan down left
+    scanner.X = this.X;
+    scanner.Y = this.Y;
+    while(scanner.X >= 2 && scanner.Y >= 2)
+    {
+      scanner.X--;
+      scanner.Y--;
+      if(scanner.X == pawn.X && scanner.Y == pawn.Y)
+      {
+        canAttack = true;
+      }
+    }
+    //scan down right
+    scanner.X = this.X;
+    scanner.Y = this.Y;
+    while(scanner.X <= 7 && scanner.Y >= 2)
+    {
+      scanner.X++;
+      scanner.Y--;
+      if(scanner.X == pawn.X && scanner.Y == pawn.Y)
+      {
+        canAttack = true;
+      }
+    }
+    return canAttack;
+  }
+
+
 }
 
 class Program
@@ -24,7 +91,8 @@ class Program
    // get y coordinate from user
    Console.WriteLine("enter the y coordinate for the Queen:");
    int y = int.Parse(Console.ReadLine());
-   Coordinate queen = new Coordinate(x,y);
+   //create queen object instance
+   Queen queenObject = new Queen(x,y);
 
    // get location of pawn from user
   // get x coordinate from user
@@ -35,29 +103,15 @@ class Program
     y = int.Parse(Console.ReadLine());
     Coordinate pawn = new Coordinate(x,y);
 
-    Console.WriteLine(queen.X);
-   //check if the queen can attack it
-
-    //if their x or y is the same print out it can attack
-    if (queen.X == pawn.X || queen.Y == pawn.Y) {
-      Console.WriteLine("Queen can attack");
-    } else {
-      Console.WriteLine("Queen cannot attack");
-    }
-
-    //if it is on a diagonal with the queen the queen can attack it
-      //create a new coordiante object called "diagonalScanner" that starts at the Queen
-
-      Coordinate Scanner = new Coordinate(queen.X, queen.Y);
-      
+    //call can attack method
+    queenObject.canAttackMethod(pawn);
+    //display the result to the user
+    Console.WriteLine(queenObject.canAttackMethod(pawn));
 
 
-      //while the scanner is in bounds
-        //check up and to the right by adding one todiagonalScanner x and y
-          //if a match is made show result
-        //if no match set the scanner back to queen and scan a different direction
 
 
-   //display result
+
+
   }
 }
