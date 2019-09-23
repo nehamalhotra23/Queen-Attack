@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/riddles/Riddles.csproj",
-      "projectName": "Riddles",
-      "projectPath": "/Users/Guest/Desktop/riddles/Riddles.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/QueenAttack/QueenAttack.csproj",
+      "projectName": "QueenAttack",
+      "projectPath": "/Users/Guest/Desktop/QueenAttack/QueenAttack.csproj",
       "packagesPath": "/Users/Guest/.nuget/packages/",
-      "outputPath": "/Users/Guest/Desktop/riddles/obj/",
+      "outputPath": "/Users/Guest/Desktop/QueenAttack/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

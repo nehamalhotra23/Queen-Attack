@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "Riddles/1.0.0": {
+      "QueenAttack/1.0.0": {
         "runtime": {
-          "Riddles.dll": {}
+          "QueenAttack.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Riddles/1.0.0": {
+    "QueenAttack/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

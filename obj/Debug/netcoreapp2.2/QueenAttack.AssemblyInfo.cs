@@ -7,10 +7,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Riddles")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("QueenAttack")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Riddles")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Riddles")]
+[assembly: System.Reflection.AssemblyProductAttribute("QueenAttack")]
+[assembly: System.Reflection.AssemblyTitleAttribute("QueenAttack")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
